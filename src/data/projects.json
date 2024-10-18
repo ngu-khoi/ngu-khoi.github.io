@@ -1,20 +1,44 @@
 [
   {
     "id": 1,
-    "name": "Project 1",
-    "imageSrc": "/images/project1.jpg",
-    "link": "https://project1.example.com"
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
   },
   {
     "id": 2,
-    "name": "Project 2",
-    "imageSrc": "/images/project2.jpg",
-    "link": "https://project2.example.com"
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
   },
   {
     "id": 3,
-    "name": "Project 3",
-    "imageSrc": "/images/project3.jpg",
-    "link": "https://project3.example.com"
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
+  },
+  {
+    "id": 4,
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
+  },
+  {
+    "id": 5,
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
+  },
+  {
+    "id": 6,
+    "name": "Kolly",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://kolly.com",
+    "description": "Modern AI college consultant"
   }
 ]

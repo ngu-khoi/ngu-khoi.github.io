@@ -2,22 +2,61 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+  height: 100vh;
 }
 
 .title {
   color: var(--primary-color);
   text-align: center;
+  height: 5vh;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
 }
 
 .projectList {
   list-style: none;
   padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  height: 80vh;
+  overflow-y: auto;
+  padding-right: 1rem;
 }
 
-.buttonContainer {
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+.projectList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.projectList::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.projectList::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.projectList::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.3s ease;
+  font-weight: bold;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .loadingContainer {

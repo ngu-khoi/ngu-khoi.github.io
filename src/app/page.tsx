@@ -88,18 +88,17 @@ const Home = () => {
 								</button>
 							</div>
 						</nav>
+
 						<div className={styles.content}>
 							<div className={styles.about}>
 								<MarkdownContent
 									content={`
-PS: this website is under construction (╯°□°)╯︵ ┻━┻
+*PS: this website is under construction (╯°□°)╯︵ ┻━┻*
 
 I'm a junior and working on my concurrent CS Master's at Harvard, focusing on:
-
-- High impact projects
 - Built [Delilah](https://www.delilah.ai/) and [PlanFlux](https://planflux.com/) during gap year, helping 500k students apply to college and processing numerous documents for insurance companies
-- Applied AI, leveraging ChatGPT
-- Serverless functions (Azure Functions, AWS Lambda) and making systems rapidly scalable
+- Applied AI, leveraging LLMs and other generative models
+- Serverless infrastructure (Azure Functions, AWS Lambda) and making systems efficient and rapidly scalable
 									`}
 								/>
 							</div>
