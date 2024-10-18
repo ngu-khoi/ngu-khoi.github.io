@@ -96,7 +96,7 @@ const Home = () => {
 *PS: this website is under construction (╯°□°)╯︵ ┻━┻*
 
 I'm a junior and working on my concurrent CS Master's at Harvard, focusing on:
-- Built [Delilah](https://www.delilah.ai/) and [PlanFlux](https://planflux.com/) during gap year, helping 500k students apply to college and processing numerous documents for insurance companies
+- Built [Delilah](https://www.delilah.ai/) and [PlanFlux](https://planflux.com/) during gap year, helping 500k students apply to college and processing numerous documents for insurance companies respectively
 - Applied AI, leveraging LLMs and other generative models
 - Serverless infrastructure (Azure Functions, AWS Lambda) and making systems efficient and rapidly scalable
 									`}

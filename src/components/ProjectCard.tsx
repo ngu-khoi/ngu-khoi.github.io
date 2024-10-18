@@ -8,6 +8,8 @@ interface ProjectCardProps {
 	name: string
 	imageSrc: string
 	link: string
+	description: string
+	github: string
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -15,6 +17,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	name,
 	imageSrc,
 	link,
+	description,
+	github,
 }) => {
 	return (
 		<li className={styles.card}>
@@ -32,6 +36,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 					className={styles.image}
 				/>
 				<h3 className={styles.title}>{name}</h3>
+				<p>{description}</p>
 			</Link>
 		</li>
 	)

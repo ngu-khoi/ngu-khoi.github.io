@@ -5,12 +5,14 @@ export interface Project {
   name: string
   imageSrc: string
   link: string
+	description: string
+	github: string
 }
 
 export const getProjects = (): Promise<Project[]> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       resolve(projectsData)
-    }, 500) // 500ms delay
+    }, 150) // 500ms delay
   })
 }

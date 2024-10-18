@@ -21,16 +21,6 @@ const Projects = () => {
 				setLoading(false)
 			})
 	}, [])
-
-	if (loading) {
-		return (
-			<div className={styles.loadingContainer}>
-				<div className={styles.loadingSpinner}></div>
-				<p>Loading projects...</p>
-			</div>
-		)
-	}
-
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.title}>my projects</h1>
@@ -41,14 +31,24 @@ const Projects = () => {
 				>
 					Back to Home
 				</button>
-				<p>there's a fake loading to test some states and effects</p>
+				<p>
+					<i>
+						there's a fake loading to test some states and effects
+					</i>
+				</p>
 			</div>
-			{/* Make the scroll inside of hte project list and leave the banner at the top */}
-			<ul className={styles.projectList}>
-				{projects.map((project) => (
-					<ProjectCard key={project.id} {...project} />
-				))}
-			</ul>
+			{loading ? (
+				<div className={styles.loadingContainer}>
+					<div className={styles.loadingSpinner}></div>
+					<p>Loading projects...</p>
+				</div>
+			) : (
+				<ul className={styles.projectList}>
+					{projects.map((project) => (
+						<ProjectCard key={project.id} {...project} />
+					))}
+				</ul>
+			)}
 		</div>
 	)
 }
