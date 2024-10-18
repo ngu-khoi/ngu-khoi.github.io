@@ -15,7 +15,7 @@
   },
   "scripts": {
     "dev": "NODE_NO_WARNINGS=1 next dev",
-    "build": "next build",
+    "build": "next build && next export && touch out/.nojekyll && echo 'khoi.ai' > out/CNAME",
     "start": "next start"
   },
   "eslintConfig": {
