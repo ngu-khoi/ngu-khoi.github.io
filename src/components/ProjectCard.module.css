@@ -1,0 +1,24 @@
+.card {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.title {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}

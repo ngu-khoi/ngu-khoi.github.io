@@ -1,0 +1,77 @@
+/*!*********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/ProjectCard.module.css ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************/
+.ProjectCard_card__YCvBo {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.ProjectCard_link__LPw_g {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ProjectCard_image__c8epP {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.ProjectCard_title__SlBJZ {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--primary-color);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/projects/Projects.module.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************/
+.Projects_container__53XdG {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.Projects_title__GmZoA {
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.Projects_projectList__HE_BE {
+  list-style: none;
+  padding: 0;
+}
+
+.Projects_buttonContainer__PcPTd {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.Projects_loadingContainer__P4DPJ {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.Projects_loadingSpinner__q5Hyf {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border-left-color: var(--primary-color);
+  animation: Projects_spin__8yFh8 1s linear infinite;
+}
+
+@keyframes Projects_spin__8yFh8 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

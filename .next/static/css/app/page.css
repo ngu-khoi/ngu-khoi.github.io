@@ -1,0 +1,135 @@
+/*!*************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/components/MarkdownContent.module.css ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************/
+.MarkdownContent_link__PtoNo {
+  color: #0070f3;
+  text-decoration: none;
+  border-bottom: 1px solid #0070f3;
+}
+
+.MarkdownContent_link__PtoNo:hover {
+  border-bottom: 2px solid #0070f3;
+}
+
+.MarkdownContent_content__K3iG4 ul,
+.MarkdownContent_content__K3iG4 ol {
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+
+.MarkdownContent_content__K3iG4 li {
+  margin-bottom: 0.5em;
+}
+
+.MarkdownContent_content__K3iG4 ul {
+  list-style-type: disc;
+}
+
+.MarkdownContent_content__K3iG4 ol {
+  list-style-type: decimal;
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/Home.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************/
+.Home_pageContainer__YV818 {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.Home_container__YRaDf {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 250, 240, 0.8);
+}
+
+.Home_bannerContainer__ThXqw {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.Home_banner__gw68R {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.Home_mainContent__ai46I {
+  display: flex;
+  padding: 1rem;
+}
+
+.Home_headshot__r_4G9 {
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 1rem;
+}
+
+.Home_rightContent__0gybL {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Home_navbar__pusq_ {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.Home_logo__9YFeS {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.Home_buttons___tMwn {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.Home_button__T7Ac7 {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  transition: transform 0.3s ease;
+}
+
+.Home_button__T7Ac7:hover {
+  transform: scale(1.1);
+}
+
+.Home_button__T7Ac7 img {
+  width: 24px;
+  height: 24px;
+}
+
+.Home_content__hh4N2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Home_sectionTitle__NU4Sm {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.Home_about__c0XUA {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+}
