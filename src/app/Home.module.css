@@ -7,7 +7,7 @@
 
 .container {
   width: 100%;
-  max-width: 640px;
+  max-width: 750px;
   margin: 0 auto;
   padding: 0;
   color: #333;
@@ -72,12 +72,12 @@
   padding: 0.25rem;
   transition: transform 0.3s ease;
   font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-
-.button:hover {
-  transform: scale(1.1);
-}
-
 .button img {
   width: 24px;
   height: 24px;

@@ -1,30 +1,56 @@
 .card {
   background-color: white;
-  margin: 1rem 0;
-  padding: 1rem;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease-in-out;
+  width: 100%; /* Change from fixed width to 100% */
+  max-width: 400px; /* Add max-width to limit card size */
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Center the card within its container */
 }
 
-.card:hover {
-  transform: scale(1.02);
-}
-
-.link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
+.imageContainer {
+  width: 100%;
+  position: relative;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  background-color: #f0f0f0; /* Light gray background for image container */
 }
 
 .image {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
+  object-fit: contain;
+}
+
+.content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .title {
-  margin-top: 0.5rem;
+  margin-top: 0;
   font-size: 1.2rem;
   color: var(--primary-color);
+}
+
+.description {
+  flex-grow: 1;
+  overflow: hidden;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

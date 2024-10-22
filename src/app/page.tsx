@@ -1,13 +1,11 @@
 "use client"
 import Image from "next/image"
-import { useRouter } from "next/navigation"
+import Link from "next/link"
 import React from "react"
 import MarkdownContent from "../components/MarkdownContent"
 import styles from "./Home.module.css"
 
 const Home = () => {
-	const router = useRouter()
-
 	return (
 		<div className={styles.pageContainer}>
 			<div className={styles.container}>
@@ -32,14 +30,11 @@ const Home = () => {
 						<nav className={styles.navbar}>
 							<span className={styles.logo}>khoi nguyen</span>
 							<div className={styles.buttons}>
-								<button
+								<Link
+									href="https://www.linkedin.com/in/ngu-khoi/"
+									target="_blank"
+									rel="noopener noreferrer"
 									className={styles.button}
-									onClick={() =>
-										window.open(
-											"https://www.linkedin.com/in/ngu-khoi/",
-											"_blank"
-										)
-									}
 								>
 									<Image
 										src="/images/linkedin.svg"
@@ -47,15 +42,12 @@ const Home = () => {
 										width={24}
 										height={24}
 									/>
-								</button>
-								<button
+								</Link>
+								<Link
+									href="https://github.com/ngu-khoi"
+									target="_blank"
+									rel="noopener noreferrer"
 									className={styles.button}
-									onClick={() =>
-										window.open(
-											"https://github.com/ngu-khoi",
-											"_blank"
-										)
-									}
 								>
 									<Image
 										src="/images/github.svg"
@@ -63,15 +55,12 @@ const Home = () => {
 										width={24}
 										height={24}
 									/>
-								</button>
-								<button
+								</Link>
+								<Link
+									href="https://www.instagram.com/khoi.anh.nguyen/"
+									target="_blank"
+									rel="noopener noreferrer"
 									className={styles.button}
-									onClick={() =>
-										window.open(
-											"https://www.instagram.com/khoi.anh.nguyen/",
-											"_blank"
-										)
-									}
 								>
 									<Image
 										src="/images/instagram.svg"
@@ -79,13 +68,13 @@ const Home = () => {
 										width={24}
 										height={24}
 									/>
-								</button>
-								<button
+								</Link>
+								<Link
+									href="/projects"
 									className={styles.button}
-									onClick={() => router.push("/projects")}
 								>
 									Projects
-								</button>
+								</Link>
 							</div>
 						</nav>
 

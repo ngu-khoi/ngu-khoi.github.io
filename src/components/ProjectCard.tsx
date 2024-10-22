@@ -22,22 +22,51 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
 	return (
 		<li className={styles.card}>
-			<Link
-				href={link}
-				target="_blank"
-				rel="noopener noreferrer"
-				className={styles.link}
-			>
+			<div className={styles.imageContainer}>
 				<Image
 					src={imageSrc}
 					alt={name}
-					width={200}
-					height={150}
+					layout="fill"
+					objectFit="contain"
 					className={styles.image}
 				/>
+			</div>
+			<div className={styles.content}>
 				<h3 className={styles.title}>{name}</h3>
-				<p>{description}</p>
-			</Link>
+				<p className={styles.description}>{description}</p>
+				<div className={styles.buttonContainer}>
+					{github && (
+						<Link
+							href={github}
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.button}
+						>
+							<Image
+								src="/images/github.svg"
+								alt="GitHub"
+								width={24}
+								height={24}
+							/>
+						</Link>
+					)}
+					{link && (
+						<Link
+							href={link}
+							target="_blank"
+							rel="noopener noreferrer"
+							className={styles.button}
+						>
+							<Image
+								src="/images/website.svg"
+								alt="Website"
+								width={24}
+								height={24}
+							/>
+						</Link>
+					)}
+				</div>
+			</div>
 		</li>
 	)
 }

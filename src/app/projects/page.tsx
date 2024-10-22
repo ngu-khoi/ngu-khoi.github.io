@@ -4,6 +4,7 @@ import { useRouter } from "next/navigation"
 import ProjectCard from "../../components/ProjectCard"
 import { getProjects, Project } from "../../api/mockApi"
 import styles from "./Projects.module.css"
+import Link from "next/link"
 
 const Projects = () => {
 	const router = useRouter()
@@ -25,12 +26,9 @@ const Projects = () => {
 		<div className={styles.container}>
 			<h1 className={styles.title}>my projects</h1>
 			<div className={styles.flexContainer}>
-				<button
-					className={styles.button}
-					onClick={() => router.push("/")}
-				>
+				<Link href="/" className={styles.button}>
 					Back to Home
-				</button>
+				</Link>
 				<p>
 					<i>
 						there's a fake loading to test some states and effects
