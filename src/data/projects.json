@@ -3,9 +3,9 @@
     "id": 7,
     "name": "Planflux",
     "description": "Intelligent Document Processing SaaS. Built with Next.js, Tailwind CSS / Shadcn, Django, and Azure Functions",
-    "imageSrc": "/images/projects/kolly.png",
+    "imageSrc": "/images/projects/planflux.png",
     "link": "https://planflux.com",
-    "github": "https://github.com/ngu-khoi"
+    "github": ""
   },
   {
     "id": 6,
@@ -19,7 +19,7 @@
     "id": 5,
     "name": "Personal Website",
     "description": "My personal website built with Next.js",
-    "imageSrc": "/images/projects/personal_website.ico",
+    "imageSrc": "/images/projects/personal_website-removebg-preview.png",
     "link": "https://khoi.ai",
     "github": "https://github.com/ngu-khoi/ngu-khoi.github.io"
   },
@@ -43,7 +43,7 @@
     "id": 2,
     "name": "Delilah",
     "description": "AI powered text editor and education SaaS helping students write personal statements and essays. Built with Next.js and Django.",
-    "imageSrc": "/images/projects/kolly.png",
+    "imageSrc": "/images/projects/delilah.png",
     "link": "https://www.delilah.ai/",
     "github": "https://github.com/ngu-khoi"
   },

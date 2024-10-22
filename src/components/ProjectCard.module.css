@@ -14,10 +14,14 @@
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
+  border-top-left-radius: 5px;  /* Match the card's border radius */
+  border-top-right-radius: 5px; /* Match the card's border radius */
 }
 
 .image {
-  object-fit: contain;
+  object-fit: cover;
+  border-top-left-radius: 5px;  /* Match the card's border radius */
+  border-top-right-radius: 5px; 
 }
 
 .content {
