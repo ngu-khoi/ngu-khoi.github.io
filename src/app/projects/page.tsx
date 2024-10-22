@@ -1,13 +1,11 @@
 "use client"
 import React, { useState, useEffect } from "react"
-import { useRouter } from "next/navigation"
 import ProjectCard from "../../components/ProjectCard"
 import { getProjects, Project } from "../../api/mockApi"
 import styles from "./Projects.module.css"
 import Link from "next/link"
 
 const Projects = () => {
-	const router = useRouter()
 	const [projects, setProjects] = useState<Project[]>([])
 	const [loading, setLoading] = useState(true)
 

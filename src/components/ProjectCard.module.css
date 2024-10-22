@@ -2,7 +2,7 @@
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  width: 100%; /* Change from fixed width to 100% */
+  width: 90%; /* Change from fixed width to 100% */
   max-width: 400px; /* Add max-width to limit card size */
   display: flex;
   flex-direction: column;
