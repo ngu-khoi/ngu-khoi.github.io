@@ -5,7 +5,8 @@ import styles from "./ProjectCard.module.css"
 
 interface ProjectCardProps {
 	id: number
-	name: string
+	title: string
+	subtitle: string
 	imageSrc: string
 	link: string
 	description: string
@@ -14,7 +15,8 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = ({
 	id,
-	name,
+	title,
+	subtitle,
 	imageSrc,
 	link,
 	description,
@@ -23,16 +25,21 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 	return (
 		<li className={styles.card}>
 			<div className={styles.imageContainer}>
-				<Image
-					src={imageSrc}
-					alt={name}
-					layout="fill"
-					objectFit="cover"
-					className={styles.image}
-				/>
+				{imageSrc !== "" ? (
+					<Image
+						src={imageSrc}
+						alt={title}
+						layout="fill"
+						objectFit="cover"
+						className={styles.image}
+					/>
+				) : (
+					<div className={styles.noImage}>no image yet!</div>
+				)}
 			</div>
 			<div className={styles.content}>
-				<h3 className={styles.title}>{name}</h3>
+				<h3 className={styles.title}>{title}</h3>
+				<h4 className={styles.subtitle}>{subtitle}</h4>
 				<p className={styles.description}>{description}</p>
 				<div className={styles.buttonContainer}>
 					{github && (

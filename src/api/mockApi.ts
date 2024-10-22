@@ -2,7 +2,8 @@ import projectsData from '../data/projects.json'
 
 export interface Project {
   id: number
-  name: string
+  title: string
+  subtitle: string
   imageSrc: string
   link: string
 	description: string

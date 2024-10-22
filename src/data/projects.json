@@ -1,58 +1,101 @@
 [
   {
-    "id": 7,
-    "name": "Planflux",
-    "description": "Intelligent Document Processing SaaS. Built with Next.js, Tailwind CSS / Shadcn, Django, and Azure Functions",
+    "id": 0,
+    "title": "Planflux",
+    "subtitle": "next.js, tailwind css, shadcn, django, azure functions",
+    "description": "Intelligent Document Processing SaaS.",
     "imageSrc": "/images/projects/planflux.png",
     "link": "https://planflux.com",
     "github": ""
   },
   {
-    "id": 6,
-    "name": "Kolly",
-    "description": "Advisor to a more modern and specialized AI college consultant. Built with Next.js.",
+    "id": 1,
+    "title": "Kolly",
+    "subtitle": "next.js",
+    "description": "Advisor to a more modern and specialized AI college consultant.",
     "imageSrc": "/images/projects/kolly.png",
     "link": "https://kolly.com",
     "github": ""
   },
   {
-    "id": 5,
-    "name": "Personal Website",
-    "description": "My personal website built with Next.js",
+    "id": 2,
+    "title": "Delilah",
+    "subtitle": "next.js, django",
+    "description": "AI powered text editor and education SaaS helping students write personal statements and essays.",
+    "imageSrc": "/images/projects/delilah.png",
+    "link": "https://www.delilah.ai/",
+    "github": "https://github.com/ngu-khoi"
+  },
+  {
+    "id": 3,
+    "title": "Personal Website",
+    "subtitle": "next.js",
+    "description": "My personal website.",
     "imageSrc": "/images/projects/personal_website-removebg-preview.png",
     "link": "https://khoi.ai",
     "github": "https://github.com/ngu-khoi/ngu-khoi.github.io"
   },
   {
     "id": 4,
-    "name": "Finetune Cost Benefit",
+    "title": "Pong",
+    "subtitle": "swiftui, swift, django",
+    "description": "Anonymous social media platform. Effectively a precursor to Sidechat.",
+    "imageSrc": "",
+    "link": "",
+    "github": ""
+  },
+  {
+    "id": 5,
+    "title": "&Pizza Auto Order Bot",
+    "subtitle": "python, selenium",
+    "description": "Automated ordering bot for &Pizza.",
+    "imageSrc": "/images/projects/&pizza.png",
+    "link": "",
+    "github": "https://github.com/ngu-khoi/andpizza"
+  },
+  {
+    "id": 6,
+    "title": "Durable Functions Distributed Tracing Repro",
+    "subtitle": "azure durable functions",
+    "description": "Tutorial on Azure Durable Functions and a repro of a distributed tracing issue (WIP)",
+    "imageSrc": "/images/projects/azure_functions.png",
+    "link": "https://github.com/Azure/azure-functions-durable-extension/issues/2662#issuecomment-2040475863",
+    "github": "https://github.com/ngu-khoi/durable-distributed-tracing-repro"
+  },
+  {
+    "id": 7,
+    "title": "PenPal",
+    "subtitle": "react",
+    "description": "React text editor with AI",
+    "imageSrc": "/images/projects/penpal.png",
+    "link": "https://devpost.com/software/gpt-text-editor",
+    "github": "https://github.com/artemas-radik/penpal"
+  },
+  {
+    "id": 8,
+    "title": "Finetune Cost Benefit",
+    "subtitle": "python",
     "description": "Cost benefit analysis for finetuning LLMs",
     "imageSrc": "/images/projects/finetune_costbenefit.png",
     "link": "https://github.com/ngu-khoi/finetune-costbenefit/blob/main/CostBenefit_Analysis_of_Finetuning_Worse_LLMs_for_Specific_Instructions.pdf",
     "github": "https://github.com/ngu-khoi/finetune-costbenefit"
   },
   {
-    "id": 3,
-    "name": "&Pizza Auto Order Bot",
-    "description": "Automated ordering bot for &Pizza. Built with Python and Selenium.",
-    "imageSrc": "/images/projects/&pizza.png",
-    "link": "",
-    "github": "https://github.com/ngu-khoi/andpizza"
+    "id": 9,
+    "title": "ISEF ADNI Project",
+    "subtitle": "python, pytorch",
+    "description": "A CV project that won 4th place at ISEF 2021.",
+    "imageSrc": "/images/projects/regeneron_isef.png",
+    "link": "https://abstracts.societyforscience.org/Home/FullAbstract?ISEFYears=0%2C&Category=Computational%20Biology%20and%20Bioinformatics&Finalist=nguyen&AllAbstracts=True&FairCountry=Any%20Country&FairState=Any%20State&ProjectId=20983",
+    "github": "https://github.com/ngu-khoi/ISEF-ADNI"
   },
   {
-    "id": 2,
-    "name": "Delilah",
-    "description": "AI powered text editor and education SaaS helping students write personal statements and essays. Built with Next.js and Django.",
-    "imageSrc": "/images/projects/delilah.png",
-    "link": "https://www.delilah.ai/",
-    "github": "https://github.com/ngu-khoi"
-  },
-  {
-    "id": 1,
-    "name": "PenPal",
-    "description": "React text editor with AI",
-    "imageSrc": "/images/projects/penpal.png",
-    "link": "https://devpost.com/software/gpt-text-editor",
-    "github": "https://github.com/artemas-radik/penpal"
+    "id": 10,
+    "title": "BRITS Project",
+    "subtitle": "python, pytorch",
+    "description": "An ML project I worked on at George Mason University.",
+    "imageSrc": "/images/projects/mason_publishing_group.png",
+    "link": "https://journals.gmu.edu/index.php/jssr/article/view/3159",
+    "github": "https://github.com/ngu-khoi/BRITS-Realtime-Alive"
   }
 ]

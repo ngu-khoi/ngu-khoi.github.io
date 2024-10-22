@@ -14,14 +14,31 @@
   position: relative;
   padding-top: 56.25%;
   overflow: hidden;
-  border-top-left-radius: 5px;  /* Match the card's border radius */
-  border-top-right-radius: 5px; /* Match the card's border radius */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-top-left-radius: 5px;  /* Match the card's border radius */
-  border-top-right-radius: 5px; 
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.noImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
 }
 
 .content {
@@ -29,19 +46,25 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  gap: 0.5rem; /* Add gap between child elements */
 }
 
 .title {
-  margin-top: 0;
+  margin: 0; /* Remove default margins */
   font-size: 1.2rem;
   color: var(--primary-color);
+}
+
+.subtitle {
+  margin: 0; /* Remove default margins */
+  font-size: 1rem;
+  color: var(--secondary-color, #666);
 }
 
 .description {
   flex-grow: 1;
   overflow: hidden;
   font-size: 0.9rem;
-  margin-bottom: 0.5rem;
 }
 
 .buttonContainer {
