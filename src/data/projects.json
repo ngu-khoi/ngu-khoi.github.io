@@ -1,50 +1,58 @@
 [
   {
-    "id": 1,
-    "name": "Kolly",
+    "id": 7,
+    "name": "Planflux",
+    "description": "Intelligent Document Processing SaaS",
     "imageSrc": "/images/projects/kolly.png",
-    "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
-    "github": "https://github.com/ngu-khoi"
-  },
-  {
-    "id": 2,
-    "name": "Kolly",
-    "imageSrc": "/images/projects/kolly.png",
-    "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
-    "github": "https://github.com/ngu-khoi"
-  },
-  {
-    "id": 3,
-    "name": "Kolly",
-    "imageSrc": "/images/projects/kolly.png",
-    "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
-    "github": "https://github.com/ngu-khoi"
-  },
-  {
-    "id": 4,
-    "name": "Kolly",
-    "imageSrc": "/images/projects/kolly.png",
-    "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
-    "github": "https://github.com/ngu-khoi"
-  },
-  {
-    "id": 5,
-    "name": "Kolly",
-    "imageSrc": "/images/projects/kolly.png",
-    "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
+    "link": "https://planflux.com",
     "github": "https://github.com/ngu-khoi"
   },
   {
     "id": 6,
     "name": "Kolly",
+    "description": "Advisor to a more modern and specialized AI college consultant",
     "imageSrc": "/images/projects/kolly.png",
     "link": "https://kolly.com",
-    "description": "Modern AI college consultant",
+    "github": ""
+  },
+  {
+    "id": 5,
+    "name": "Personal Website",
+    "description": "My personal website built with Next.js and Tailwind CSS",
+    "imageSrc": "/images/projects/personal_website.ico",
+    "link": "https://khoi.ai",
+    "github": "https://github.com/ngu-khoi/ngu-khoi.github.io"
+  },
+  {
+    "id": 4,
+    "name": "Finetune Cost Benefit",
+    "description": "Cost benefit analysis for finetuning LLMs",
+    "imageSrc": "/images/projects/finetune_costbenefit.png",
+    "link": "https://github.com/ngu-khoi/finetune-costbenefit/blob/main/CostBenefit_Analysis_of_Finetuning_Worse_LLMs_for_Specific_Instructions.pdf",
+    "github": "https://github.com/ngu-khoi/finetune-costbenefit"
+  },
+  {
+    "id": 3,
+    "name": "&Pizza Auto Order Bot",
+    "description": "Automated ordering bot for &Pizza",
+    "imageSrc": "/images/projects/&pizza.png",
+    "link": "",
+    "github": "https://github.com/ngu-khoi/andpizza"
+  },
+  {
+    "id": 2,
+    "name": "Delilah",
+    "description": "AI powered text editor and education SaaS helping students write personal statements and essays.",
+    "imageSrc": "/images/projects/kolly.png",
+    "link": "https://www.delilah.ai/",
     "github": "https://github.com/ngu-khoi"
+  },
+  {
+    "id": 1,
+    "name": "PenPal",
+    "description": "React text editor with AI",
+    "imageSrc": "/images/projects/penpal.png",
+    "link": "https://devpost.com/software/gpt-text-editor",
+    "github": "https://github.com/artemas-radik/penpal"
   }
 ]
