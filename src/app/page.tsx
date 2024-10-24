@@ -13,9 +13,10 @@ const Home = () => {
 					<Image
 						src="/images/KoiFishPondBanner.avif"
 						alt="Koi Fish Pond Banner"
-						width={640}
-						height={200}
+						fill
+						sizes="(max-width: 900px) 100vw, 900px"
 						className={styles.banner}
+						priority
 					/>
 				</div>
 				<div className={styles.mainContent}>
