@@ -97,5 +97,14 @@
     "imageSrc": "/images/projects/mason_publishing_group.png",
     "link": "https://journals.gmu.edu/index.php/jssr/article/view/3159",
     "github": "https://github.com/ngu-khoi/BRITS-Realtime-Alive"
+  },
+  {
+    "id": 11,
+    "title": "Datamining / Webscraping Projects",
+    "subtitle": "python",
+    "description": "A collection of projects I worked on for fun.",
+    "imageSrc": "",
+    "link": "",
+    "github": "https://github.com/ngu-khoi/webscrape"
   }
 ]
