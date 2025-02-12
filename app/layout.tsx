@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import { ThemeProvider } from "@/components/theme-provider"
 import { DarkModeToggle } from "@/components/dark-mode-toggle"
+import { Analytics } from "@vercel/analytics/react"
 import "./globals.css"
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
 				>
 					{children}
 					<DarkModeToggle />
+					<Analytics />
 				</ThemeProvider>
 			</body>
 		</html>
