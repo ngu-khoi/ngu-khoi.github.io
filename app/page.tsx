@@ -197,7 +197,7 @@ export default function Home() {
 
 					<div className="max-w-2xl mx-auto space-y-4">
 						<h2 className="text-2xl font-bold tracking-tight">
-							what's on my radar
+							what&apos;s on my radar
 						</h2>
 						<p>ai productivity coach. adhd has plagued us</p>
 						<p>
