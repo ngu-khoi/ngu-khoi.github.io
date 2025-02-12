@@ -1,6 +1,8 @@
 export function GitHubIcon(props: React.SVGProps<SVGSVGElement>) {
 	return (
 		<svg
+			width="24"
+			height="24"
 			{...props}
 			fill="currentColor"
 			viewBox="0 0 24 24"

@@ -1,6 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
 import { api, type Project } from "@/lib/api"
+import { GitHubIcon, WorldIcon } from "@/components/icons"
+import { Button } from "@/components/ui/button"
+import {
+	Card,
+	CardContent,
+	CardDescription,
+	CardHeader,
+	CardTitle,
+	CardFooter,
+} from "@/components/ui/card"
 
 async function getProjects() {
 	return api.getProjects()
@@ -42,52 +52,66 @@ export default async function ProjectsPage() {
 				{/* Projects Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 					{projects.map((project: Project) => (
-						<div
+						<Card
 							key={project.id}
-							className="group bg-background/50 rounded-lg p-6 hover:bg-background/70 transition-all duration-200 flex flex-col"
+							className="group bg-background/50 hover:bg-background/70 transition-all duration-200 flex flex-col"
 						>
-							<div className="flex-grow">
-								{project.imageSrc && (
-									<div className="relative h-48 mb-6 overflow-hidden rounded-lg">
+							{/* Image Section */}
+							<div className="px-6 pt-6">
+								{project.imageSrc ? (
+									<div className="relative h-40 overflow-hidden rounded-lg">
 										<Image
 											src={project.imageSrc}
 											alt={project.title}
 											fill
-											className="object-cover transition-transform duration-200 group-hover:scale-105"
+											className="object-cover"
 										/>
 									</div>
+								) : (
+									<div className="relative h-40 rounded-lg bg-muted flex items-center justify-center text-muted-foreground">
+										no image here!
+									</div>
 								)}
-								<h3 className="text-xl font-semibold mb-2">
+							</div>
+
+							<CardHeader>
+								<CardTitle className="text-xl font-semibold">
 									{project.title}
-								</h3>
-								<p className="text-sm text-muted-foreground mb-3">
+								</CardTitle>
+								<CardDescription className="text-sm text-muted-foreground">
 									{project.subtitle}
-								</p>
+								</CardDescription>
+							</CardHeader>
+							<CardContent className="flex-grow">
 								<p className="text-sm">{project.description}</p>
-							</div>
-							<div className="flex gap-4 mt-6 pt-6 border-t">
-								{project.link && (
-									<a
-										href={project.link}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-sm hover:opacity-80 transition-colors"
-									>
-										visit →
-									</a>
-								)}
-								{project.github && (
-									<a
-										href={project.github}
-										target="_blank"
-										rel="noopener noreferrer"
-										className="text-sm hover:opacity-80 transition-colors"
-									>
-										github →
-									</a>
-								)}
-							</div>
-						</div>
+							</CardContent>
+							{(project.link || project.github) && (
+								<CardFooter className="pt-4 border-t">
+									<div className="flex gap-4">
+										{project.link && (
+											<a
+												href={project.link}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-sm hover:opacity-80 transition-colors"
+											>
+												visit →
+											</a>
+										)}
+										{project.github && (
+											<a
+												href={project.github}
+												target="_blank"
+												rel="noopener noreferrer"
+												className="text-sm hover:opacity-80 transition-colors"
+											>
+												github →
+											</a>
+										)}
+									</div>
+								</CardFooter>
+							)}
+						</Card>
 					))}
 				</div>
 			</div>
