@@ -1,24 +1,9 @@
 import Image from "next/image"
 import Link from "next/link"
-
-interface Project {
-	id: number
-	title: string
-	subtitle: string
-	description: string
-	imageSrc?: string
-	link?: string
-	github?: string
-}
+import { api, type Project } from "@/app/lib/api"
 
 async function getProjects() {
-	const res = await fetch("http://localhost:3000/api/projects", {
-		cache: "no-store",
-	})
-	if (!res.ok) {
-		throw new Error("Failed to fetch projects")
-	}
-	return res.json()
+	return api.getProjects()
 }
 
 export default async function ProjectsPage() {
