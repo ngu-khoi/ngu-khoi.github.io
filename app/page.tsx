@@ -1,12 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import {
-	Menubar,
-	MenubarContent,
-	MenubarItem,
-	MenubarMenu,
-	MenubarTrigger,
-} from "@/components/ui/menubar"
+import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar"
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from "@/components/icons"
 import {
 	Tooltip,

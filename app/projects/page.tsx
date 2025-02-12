@@ -1,8 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
 import { api, type Project } from "@/lib/api"
-import { GitHubIcon, WorldIcon } from "@/components/icons"
-import { Button } from "@/components/ui/button"
 import {
 	Card,
 	CardContent,
