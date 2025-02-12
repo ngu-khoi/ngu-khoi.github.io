@@ -135,7 +135,7 @@ export default function Home() {
 								>
 									harvard
 								</a>{" "}
-								('25.5)
+								(&apos;25.5)
 							</p>
 							<p>
 								swe intern at{" "}
@@ -161,7 +161,7 @@ export default function Home() {
 								</a>
 								{", "}
 								the first ever ai college consultant (acquired,
-								'23-'24)
+								&apos;23-&apos;24)
 							</p>
 						</div>
 					</div>

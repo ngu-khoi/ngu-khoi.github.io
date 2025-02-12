@@ -1,6 +1,16 @@
 import Image from "next/image"
 import Link from "next/link"
 
+interface Project {
+	id: number
+	title: string
+	subtitle: string
+	description: string
+	imageSrc?: string
+	link?: string
+	github?: string
+}
+
 async function getProjects() {
 	const res = await fetch("http://localhost:3000/api/projects", {
 		cache: "no-store",
@@ -46,7 +56,7 @@ export default async function ProjectsPage() {
 
 				{/* Projects Grid */}
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-					{projects.map((project: any) => (
+					{projects.map((project: Project) => (
 						<div
 							key={project.id}
 							className="group bg-zinc-800/50 rounded-lg p-6 hover:bg-zinc-800/70 transition-all duration-200 flex flex-col"
