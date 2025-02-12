@@ -110,7 +110,10 @@ export default function Home() {
 				</section>
 
 				{/* About Section */}
-				<section id="about" className="py-8 px-4 sm:px-6 lg:px-8">
+				<section
+					id="about"
+					className="py-8 px-4 sm:px-6 lg:px-8 space-y-16"
+				>
 					<div className="max-w-2xl mx-auto space-y-4">
 						<h2 className="text-2xl font-bold tracking-tight">
 							about
@@ -128,9 +131,10 @@ export default function Home() {
 										</TooltipTrigger>
 										<TooltipContent className="max-w-[300px] text-sm">
 											<p className="leading-relaxed">
-												taken some hard classes. part of
-												currier house, poker club, and
-												prod 2.0
+												was doing concurrent masters,
+												but now graduating early
+												instead. part of currier house,
+												poker club, and prod 2.0
 											</p>
 										</TooltipContent>
 									</Tooltip>
@@ -189,6 +193,24 @@ export default function Home() {
 							</p>
 							<p>former 3x top 500 valorant player (radiant)</p>
 						</div>
+					</div>
+
+					<div className="max-w-2xl mx-auto space-y-4">
+						<h2 className="text-2xl font-bold tracking-tight">
+							what's on my radar
+						</h2>
+						<p>ai productivity coach. adhd has plagued us</p>
+						<p>
+							social media scheduler from my buddy{" "}
+							<a
+								href="https://raunak.io/"
+								target="_blank"
+								rel="noopener noreferrer"
+								className="underline hover:opacity-80 transition-colors"
+							>
+								raunak
+							</a>
+						</p>
 					</div>
 				</section>
 
