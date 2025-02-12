@@ -8,6 +8,12 @@ import {
 	MenubarTrigger,
 } from "@/components/ui/menubar"
 import { GitHubIcon, LinkedInIcon, InstagramIcon } from "@/components/icons"
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip"
 
 export default function Home() {
 	return (
@@ -119,38 +125,70 @@ export default function Home() {
 							<p>I LOVE BUILDING BUTTONS</p>
 							<p>
 								studying cs at{" "}
-								<a
-									href="https://harvard.edu"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:opacity-80 transition-colors underline"
-								>
-									harvard
-								</a>{" "}
+								<TooltipProvider>
+									<Tooltip delayDuration={200}>
+										<TooltipTrigger asChild>
+											<span className="underline cursor-pointer">
+												harvard
+											</span>
+										</TooltipTrigger>
+										<TooltipContent className="max-w-[300px] text-sm">
+											<p className="leading-relaxed">
+												taken some hard classes. part of
+												currier house, poker club, and
+												prod 2.0
+											</p>
+										</TooltipContent>
+									</Tooltip>
+								</TooltipProvider>{" "}
 								(&apos;25.5)
 							</p>
 							<p>
 								swe intern at{" "}
-								<a
-									href="https://openai.com"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:opacity-80 transition-colors underline"
-								>
-									openai
-								</a>{" "}
+								<TooltipProvider>
+									<Tooltip delayDuration={200}>
+										<TooltipTrigger asChild>
+											<span className="underline cursor-pointer">
+												openai
+											</span>
+										</TooltipTrigger>
+										<TooltipContent className="max-w-[300px] text-sm">
+											<p className="leading-relaxed">
+												we&apos;ll see what team im on
+												soon
+											</p>
+										</TooltipContent>
+									</Tooltip>
+								</TooltipProvider>{" "}
 								(summer 2025, inaugural cohort)
 							</p>
 							<p>
 								co-founded and took a leave for{" "}
-								<a
-									href="#"
-									target="_blank"
-									rel="noopener noreferrer"
-									className="hover:opacity-80 transition-colors underline"
-								>
-									delilah
-								</a>
+								<TooltipProvider>
+									<Tooltip delayDuration={200}>
+										<TooltipTrigger asChild>
+											<span className="underline cursor-pointer">
+												delilah
+											</span>
+										</TooltipTrigger>
+										<TooltipContent className="max-w-[300px] text-sm">
+											<p className="leading-relaxed">
+												our intern made{" "}
+												<a
+													href="https://kolly.ai"
+													target="_blank"
+													rel="noopener noreferrer"
+													className="underline hover:opacity-80 transition-colors"
+												>
+													kolly
+												</a>
+												{", "}a sleeker and more modern
+												&quot;daughter&quot; of delilah,
+												check it out!
+											</p>
+										</TooltipContent>
+									</Tooltip>
+								</TooltipProvider>
 								{", "}
 								the first ever ai college consultant (acquired,
 								&apos;23-&apos;24)
