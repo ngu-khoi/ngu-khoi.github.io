@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
 	return (
-		<div className="min-h-screen bg-zinc-900 text-foreground font-poppins">
+		<div className="min-h-screen font-poppins">
 			{/* Main Content Container */}
 			<div className="max-w-4xl mx-auto">
 				{/* Banner Image */}
@@ -24,7 +24,7 @@ export default function Home() {
 					<div className="flex flex-col sm:flex-row items-center sm:items-start gap-4">
 						{/* Profile Image */}
 						<div className="relative w-36 h-36">
-							<div className="w-full h-full rounded-full border-2 border-zinc-700 bg-zinc-800 overflow-hidden shadow-md">
+							<div className="w-full h-full rounded-full border-2 overflow-hidden shadow-md">
 								<div className="relative w-full h-full">
 									<Image
 										src="/images/Harvard-Khoi-Nguyen.jpg"
@@ -48,10 +48,10 @@ export default function Home() {
 										website under construction (╯°□°)╯︵ ┻━┻
 									</div>
 								</div>
-								<div className="flex gap-6 items-center justify-center sm:justify-end bg-zinc-800/95 backdrop-blur-sm py-2 px-4 rounded-full shadow-sm">
+								<div className="flex gap-6 items-center justify-center sm:justify-end backdrop-blur-sm py-2 px-4 rounded-full shadow-sm">
 									<a
 										href="https://www.linkedin.com/in/ngu-khoi/"
-										className="text-foreground hover:text-foreground/80 transition-colors"
+										className="hover:opacity-80 transition-colors"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="LinkedIn Profile"
@@ -67,7 +67,7 @@ export default function Home() {
 									</a>
 									<a
 										href="https://github.com/ngu-khoi"
-										className="text-foreground hover:text-foreground/80 transition-colors"
+										className="hover:opacity-80 transition-colors"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="GitHub Profile"
@@ -87,7 +87,7 @@ export default function Home() {
 									</a>
 									<a
 										href="https://www.instagram.com/khoi.anh.nguyen/"
-										className="text-foreground hover:text-foreground/80 transition-colors"
+										className="hover:opacity-80 transition-colors"
 										target="_blank"
 										rel="noopener noreferrer"
 										aria-label="Instagram Profile"
@@ -107,7 +107,7 @@ export default function Home() {
 									</a>
 									<Link
 										href="/projects"
-										className="text-foreground hover:text-foreground/80 transition-colors text-sm font-bold"
+										className="hover:opacity-80 transition-colors text-sm font-bold"
 									>
 										Projects
 									</Link>
@@ -131,7 +131,7 @@ export default function Home() {
 									href="https://harvard.edu"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-foreground hover:text-foreground/80 transition-colors underline"
+									className="hover:opacity-80 transition-colors underline"
 								>
 									harvard
 								</a>{" "}
@@ -143,7 +143,7 @@ export default function Home() {
 									href="https://openai.com"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-foreground hover:text-foreground/80 transition-colors underline"
+									className="hover:opacity-80 transition-colors underline"
 								>
 									openai
 								</a>{" "}
@@ -155,7 +155,7 @@ export default function Home() {
 									href="#"
 									target="_blank"
 									rel="noopener noreferrer"
-									className="text-foreground hover:text-foreground/80 transition-colors underline"
+									className="hover:opacity-80 transition-colors underline"
 								>
 									delilah
 								</a>
@@ -163,12 +163,13 @@ export default function Home() {
 								the first ever ai college consultant (acquired,
 								&apos;23-&apos;24)
 							</p>
+							<p>former 3x top 500 valorant player (radiant)</p>
 						</div>
 					</div>
 				</section>
 
 				{/* Footer */}
-				<footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-zinc-700">
+				<footer className="py-8 px-4 sm:px-6 lg:px-8 border-t">
 					<div className="max-w-2xl mx-auto text-center text-sm text-muted-foreground">
 						© {new Date().getFullYear()} Khoi Nguyen. All rights
 						reserved.
