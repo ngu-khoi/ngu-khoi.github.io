@@ -7,7 +7,7 @@ const projects = [
     subtitle: "pytorch, python",
     description: "testing self-explaining neural networks against 3d rotational perturbations.",
     imageSrc: "/images/projects/senn.png",
-    link: "",
+    link: "https://github.com/ngu-khoi/SENN/blob/main/2822r_Final_Report.pdf",
     github: "https://github.com/ngu-khoi/SENN"
   },
   {
