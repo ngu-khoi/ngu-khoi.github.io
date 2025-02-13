@@ -1,7 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Menubar, MenubarMenu, MenubarTrigger } from "@/components/ui/menubar"
-import { GitHubIcon, LinkedInIcon, InstagramIcon } from "@/components/icons"
+import { GitHubIcon, LinkedInIcon, XIcon } from "@/components/icons"
 
 export const ProfileHeader = () => {
 	return (
@@ -82,12 +82,12 @@ const SocialLinks = () => (
 		<MenubarMenu>
 			<MenubarTrigger className="cursor-pointer select-none rounded-sm px-3 py-1 text-sm font-medium outline-none hover:bg-accent hover:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground">
 				<a
-					href="https://www.instagram.com/khoi.anh.nguyen/"
+					href="https://x.com/ngu_khoi"
 					target="_blank"
 					rel="noopener noreferrer"
-					aria-label="Instagram Profile"
+					aria-label="X (Twitter) Profile"
 				>
-					<InstagramIcon className="w-6 h-6" />
+					<XIcon className="w-6 h-6" />
 				</a>
 			</MenubarTrigger>
 		</MenubarMenu>
