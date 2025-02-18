@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import Link from "next/link"
 import { api, type Project } from "@/lib/api"
@@ -9,13 +11,22 @@ import {
 	CardTitle,
 	CardFooter,
 } from "@/components/ui/card"
+import { Skeleton } from "@/components/ui/skeleton"
+import { useState, useEffect } from "react"
 
-async function getProjects() {
-	return api.getProjects()
-}
+export default function ProjectsPage() {
+	const [loadedImages, setLoadedImages] = useState<Record<string, boolean>>(
+		{}
+	)
+	const [projects, setProjects] = useState<Project[]>([])
 
-export default async function ProjectsPage() {
-	const projects = await getProjects()
+	useEffect(() => {
+		const loadProjects = async () => {
+			const data = await api.getProjects()
+			setProjects(data)
+		}
+		loadProjects()
+	}, [])
 
 	return (
 		<div className="min-h-screen font-poppins">
@@ -57,16 +68,30 @@ export default async function ProjectsPage() {
 							{/* Image Section */}
 							<div className="px-6 pt-6">
 								{project.imageSrc ? (
-									<div className="relative h-40 overflow-hidden rounded-lg">
+									<div className="relative aspect-video w-full overflow-hidden rounded-lg">
 										<Image
 											src={project.imageSrc}
 											alt={project.title}
 											fill
-											className="object-cover"
+											sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+											className="object-cover transition-transform group-hover:scale-105"
+											loading="lazy"
+											onLoadingComplete={() => {
+												setLoadedImages((prev) => ({
+													...prev,
+													[project.id]: true,
+												}))
+											}}
 										/>
+										{!loadedImages[project.id] && (
+											<>
+												<div className="absolute inset-0 bg-background/10 backdrop-blur-[1px]" />
+												<Skeleton className="absolute inset-0 animate-pulse" />
+											</>
+										)}
 									</div>
 								) : (
-									<div className="relative h-40 rounded-lg bg-muted flex items-center justify-center text-muted-foreground">
+									<div className="relative aspect-video w-full rounded-lg bg-muted flex items-center justify-center text-muted-foreground">
 										no image here!
 									</div>
 								)}
